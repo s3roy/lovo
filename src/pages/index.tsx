@@ -5,8 +5,7 @@ import { NextPage } from "next";
 const Home: NextPage = () => {
   const handleDownload = () => {
     // Replace 'https://example.com/your-apk-file.apk' with your actual APK URL.
-    const apkUrl =
-      "https://frnd.blr1.digitaloceanspaces.com/IMAGE_oAyEBQT5BdN6kRNTJX9NjYnKBbKHwwp6X517Y1POnlqQoy3aPtnD5Avo.apk";
+    const apkUrl = "https://frnd.blr1.digitaloceanspaces.com/kimo.apk";
     window.location.href = apkUrl;
   };
 
@@ -19,7 +18,6 @@ const Home: NextPage = () => {
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
       position="relative"
-      px={{ base: 2, lg: 20 }} // Responsive padding for smaller and larger screens
       _after={{
         content: '""',
         position: "absolute",
@@ -32,24 +30,25 @@ const Home: NextPage = () => {
         zIndex: 1,
       }}
     >
-      <Box
-        position="relative"
-        zIndex={2}
-        padding="20px"
-        ml={{ base: 2, lg: 20 }}
-      >
-        <Text
-          fontFamily="'Inspiration', cursive"
-          fontSize={{ base: "25px", md: "100px" }}
-          fontWeight="400"
-          lineHeight={{ base: "31.75px", md: "127px" }}
-          textAlign="left"
-          color="#FFFFFF"
-          mb="16px"
+      <Box position="relative" zIndex={2}>
+        <Box bg="#FBFBFD1A" py={3} px={10}>
+          <Text
+            fontFamily="'Inspiration', cursive"
+            fontSize={{ base: "50px", md: "100px" }}
+            fontWeight="400"
+            lineHeight={{ base: "31.75px", md: "80px" }}
+            textAlign="left"
+            color="#FFFFFF"
+            mb="16px"
+          >
+            Kimo
+          </Text>
+        </Box>
+        <Box
+          mt={{ base: 50, lg: 200 }}
+          mr={{ base: 0, lg: 150 }}
+          px={{ base: 5, md: 20 }}
         >
-          Lovo
-        </Text>
-        <Box mt={20} mr={{ base: 0, lg: 150 }}>
           <Text
             fontFamily="'Inter', sans-serif"
             fontSize={{ base: "65px", md: "95px" }}
